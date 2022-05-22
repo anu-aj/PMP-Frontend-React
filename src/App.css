@@ -1,0 +1,34 @@
+.centered_typing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper_type_head {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo_head {
+  width: 26ch;
+  animation: typing 2s steps(26), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: 'Newsreader', serif;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+      width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+      border-color: transparent
+  }
+}
